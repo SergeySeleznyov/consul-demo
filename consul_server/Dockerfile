@@ -3,7 +3,8 @@ FROM localhost:8082/ubuntu:18.04
 RUN apt-get update && \
     apt-get install -y \
     bash curl nano net-tools zip unzip \
-    jq dnsutils iputils-ping
+    jq dnsutils iputils-ping \
+    mc tmux 
 
 ADD https://releases.hashicorp.com/consul/1.4.4/consul_1.4.4_linux_amd64.zip /tmp/consul.zip
 RUN cd /bin && unzip /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip

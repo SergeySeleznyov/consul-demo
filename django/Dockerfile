@@ -3,7 +3,8 @@ FROM localhost:8082/python:3.7
 RUN apt-get update && \
     apt-get install -y \
     bash curl nano net-tools zip unzip \
-    jq dnsutils iputils-ping
+    jq dnsutils iputils-ping \
+    mc tmux
 
 # Python Environment Setup
 ENV PYTHONDONTWRITEBYTECODE 1

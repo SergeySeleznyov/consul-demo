@@ -3,7 +3,8 @@ FROM localhost:8082/ubuntu:18.04
 RUN apt-get update && \
     apt-get install -y \
     bash curl nano net-tools zip unzip \
-    jq dnsutils iputils-ping
+    jq dnsutils iputils-ping \
+    mc tmux
 
 # Install MongoDB
 RUN apt-get install -y mongodb
