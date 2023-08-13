@@ -6,7 +6,8 @@ RUN apt-get update && \
     jq dnsutils iputils-ping \
     mc tmux 
 
-ADD https://releases.hashicorp.com/consul/1.4.4/consul_1.4.4_linux_amd64.zip /tmp/consul.zip
+# ADD https://releases.hashicorp.com/consul/1.4.4/consul_1.4.4_linux_amd64.zip /tmp/consul.zip
+ADD ./distr/consul_1.16.1_linux_amd64.zip /tmp/consul.zip
 RUN cd /bin && unzip /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip
 
 # Consul ports
