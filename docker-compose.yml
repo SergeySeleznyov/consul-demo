@@ -21,7 +21,7 @@ services:
         ipv4_address: 33.10.0.2
 
   load_balancer:
-    image: fabiolb/fabio
+    image: localhost:8082/fabiolb/fabio
     ports:
       - 9998:9998
       - 9999:9999
