@@ -21,7 +21,7 @@ services:
         ipv4_address: 33.10.0.2
 
   load_balancer:
-    image: localhost:8082/fabiolb/fabio
+    image: fabiolb/fabio
     ports:
       - 9998:9998
       - 9999:9999
@@ -44,7 +44,7 @@ services:
       - MONGO_PORT=27017
       - PRIMARY_MONGO=33.10.0.3
       - PRIVATE_IP_ADDRESS=33.10.0.3
-    restart: always
+    restart: "no"
     ports:
       - 27017:27017
       - 28017:28017
@@ -70,7 +70,7 @@ services:
       - MONGO_PORT=27017
       - PRIMARY_MONGO=33.10.0.3
       - PRIVATE_IP_ADDRESS=33.10.0.4
-    restart: always
+    restart: "no"
     ports:
       - 27018:27017
       - 28018:28017
@@ -94,7 +94,7 @@ services:
       - MONGO_PORT=27017
       - PRIMARY_MONGO=33.10.0.3
       - PRIVATE_IP_ADDRESS=33.10.0.5
-    restart: always
+    restart: "no"
     ports:
       - 27019:27017
       - 28019:28017

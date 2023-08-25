@@ -1,0 +1,1 @@
+docker run -it --name consul_server consul_server

@@ -19,3 +19,4 @@ primary_mongo=$(ifconfig | grep $PRIMARY_MONGO | wc -l)
 if [[ $primary_mongo -eq 1 ]]; then
     mongo /etc/replSetConfig.js
 fi
+

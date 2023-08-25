@@ -8,3 +8,4 @@ consul agent -bind $PRIVATE_IP_ADDRESS \
     -data-dir /data \
     -config-dir /etc/consul.d \
     -enable-local-script-checks
+

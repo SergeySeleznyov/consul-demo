@@ -52,3 +52,4 @@ fi
 if [[ $REGISTER_MASTER -ne 0 && $REGISTER_SECONDARY -ne 0 ]]; then
   consul reload
 fi
+
